@@ -17,7 +17,7 @@ for(let i = 0; i < 101; i++) {
 
 let sum = 0;
 for(let i = 0; i < 101; i++) {
-    sum = sum + i;
+    sum += i;
 }
 console.log(sum);
 
@@ -30,7 +30,7 @@ for(let i = 0; i < arr.length; i++) {
 // Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for найдите сумму элементов этого массива. Запишите ее в переменную result.
 let sum2 = 0
 for(let i = 0; i < arr.length; i++) {
-    sum2 = sum2 + i
+    sum2 += i
 }
 const result = sum2;
 console.log(result);
@@ -68,7 +68,7 @@ let sum1 = 0;
 let array2 = [12, 13, 4, 5, -1, -2, -4, -8];
 for (let i = 0; i < array2.length; i++) {
     if (array2[i] > 0) {
-        sum1 = sum1 + array2[i];
+        sum1 += array2[i];
     }
 }
 console.log(sum1);
