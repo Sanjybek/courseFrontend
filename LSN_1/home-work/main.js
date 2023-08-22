@@ -1,11 +1,10 @@
-let str = 'Привет Мир!';
+let str = 'Привет Мир';
 console.log(str);
 
 let str1 = 'Привет';
 let str2 = ' Мир!';
 let str3 = str1 + str2;
 console.log(str3);
-console.log(str1 + str2);
 
 let name = ' Санжыбек';
 let fname = str1 + name;
@@ -13,14 +12,14 @@ console.log(fname);
 console.log(str1 + name);
 
 let age = 20
-let year = ' лет'
-let ageYear = age + year 
-console.log('Мне ' +  ageYear);
+let your = ' лет'
+let ageYour = age + your 
+console.log('Мне ' +  ageYour);
 
-let yourТame = prompt('')
-alert(yourТame)
+let yourName = prompt('Введите имя')
+alert(yourName)
 
-let number = prompt()
+let number = prompt('Введтие число')
 alert(number * number)
 
 let str4 = 'abcde';
@@ -36,7 +35,7 @@ let c = str4[2]
 let e = str4[4]
 console.log(a, c, e);
 
-let num = 12345
+let num = [1,2,3,4,5]
 console.log(num[0] * num [1] * num[2] * num[3]);
 
 let seconds = 60
@@ -45,10 +44,10 @@ let minutes = 60
 let hour = seconds * minutes 
 console.log(hour); 
  
-let dey = hour * 24 
-console.log(dey);
+let day = hour * 24 
+console.log(day);
 
-let month = dey * 30
+let month = day * 30
 console.log(month);
 
 let hh = 4
