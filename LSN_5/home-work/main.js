@@ -95,8 +95,8 @@ const city3 = {
     name: "ГородJ",
     population: 1000000,
     exportStr() {
-        console.log(city3.name);
-        console.log(city3.population);
+        console.log(this.name);
+        console.log(this.population);
     }
 }
 city3.exportStr()
@@ -104,8 +104,8 @@ const city4 = {
     name: "ГородN",
     population: 10000,
     exportStr() {
-        console.log(city4.name);
-        console.log(city4.population);
+        console.log(this.name);
+        console.log(this.population);
     }
 }
 city4.exportStr()
