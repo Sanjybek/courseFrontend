@@ -5,26 +5,18 @@ console.log(newArr);
 
 // Фильтрация массива чисел, оставляющая только четные числа (использовать filter):
 const numbers = [1, 2, 3, 4, 5];
-const arr = numbers.filter((e) => {
-    if(e % 2 === 0) {
-        console.log(e);
-    }
-})
+const arr = numbers.filter((e) => e % 2 === 0)
+console.log(arr);
 // Фильтрация массива строк, оставляющая только слова с буквой "a" (использовать filter и includes):
-const array = words.filter((e) => {
-    if(e.includes('a')) {
-        console.log(e);
-    }
-})
+const array = words.filter((e) => e.includes ('a'))
+console.log(array);
 // Поиск первого числа в массиве, которое больше 10 (использовать find):
 const number = [8, 12, 5, 20, 3];
-const num = number.find((e) => {
-    return e > 10
-})
+const num = number.find((e) => e > 10)
 console.log(num);
 // Добавление элемента в конец массива (использовать push):
 const fruits1 = ["apple", "banana"];
-fruits1.push('eggplant')
+fruits1.push("eggplant")
 console.log(fruits1);
 
 // Удаление последнего элемента из массива (использовать pop):
@@ -44,9 +36,7 @@ console.log(fruits4);
 
 // Сортировка массива чисел в порядке возрастания (использовать sort):
 const numbers1 = [3, 1, 4, 1, 5, 9, 2];
-const sort1 = numbers1.sort((a, b) => {
-    return  a - b
-})
+const sort1 = numbers1.sort((a, b) => a - b)
 console.log(sort1);
 
 
