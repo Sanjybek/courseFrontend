@@ -20,13 +20,13 @@ const arr = words.map((e) => e.length)
 console.log(arr);
 
 // Преобразование входной строки в нижний регистр (использовать toLowerCase):
-const inputString = "Hello World";
-const str = inputString.toLowerCase()
-console.log(str);
 // Преобразование входной строки в верхний регистр (использовать toUpperCase):
+const inputString = "Hello World";
 const inputString1 = "Hello World";
-const str1 = inputString1.toUpperCase()
-console.log(str1);
+const toLowerCase = inputString.toLowerCase()
+const toUpperCase = inputString1.toUpperCase()
+console.log(toLowerCase);
+console.log(toUpperCase);
 // Поиск индекса элемента в массиве (использовать indexOf):
 const fruits1 = ["apple", "banana", "cherry"];
 const str2 = fruits1.indexOf('banana')
@@ -53,10 +53,11 @@ const str4 = sentence.split('')
 console.log(str4);
 // Преобразование вложенных массивов в одномерный массив (использовать flat):
 const nestedArray = [1, [2, 3], [4, [5, 6]]];
-const flatNum = nestedArray.flat(2)
+const flatNum = nestedArray.flat(Infinity)
 console.log(flatNum);
 // Конкатенация нескольких строк в одну (использовать concat):
-const string1 = "Hello"; const string2 = " World";
+const string1 = "Hello";
+const string2 = " World";
 const concatStr = string1.concat(string2)
 console.log(concatStr);
 // Подсчет количества элементов в массиве (использовать length):
@@ -72,16 +73,10 @@ console.log(spStr);
 // 3 - Отфильтровать студентов, изучающих математику.
 // 4 - Соединить имена отфильтрованных студентов в одну строку через запятую.
 const students = [ { name: "Alice", subject: "Math" }, { name: "Bob", subject: "Physics" }, { name: "Charlie", subject: "Math" }, { name: "David", subject: "Chemistry" }, ];
-const FrName = students.map((e) => {
-    return e.name.toLowerCase()
-})
+const FrName = students.map((e) => e.name.toLowerCase())
 console.log(FrName);
 
-const Mt = students.map((e) => {
-    if(e.subject === 'Math') {
-        return e.name
-    }
-})
+const Mt = students.map((e) => e.subject === 'Math')
 // console.log(Mt);
 console.log(Mt);
 
