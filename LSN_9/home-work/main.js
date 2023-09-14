@@ -32,23 +32,7 @@ class Todo  {
         }) 
         this.#dataArr = arr
     }
-    sortData(id) {
-        const arr = this.#dataArr.map((e) => {
-            return e
-        })
-        // const sort = this.#dataArr = arr.sort((a,b) => {
-        //     if(a > b) {
-        //         return sort
-        //     }
-        // });
-        // console.log(sort);
-        const sort = this.#dataArr = arr.sort((a,b) => {
-            if(a > b) {
-                return sort
-            }
-        });
-        console.log(sort);
-    }
+    
 }
 const shopTodo = new Todo()
 shopTodo.setData({
@@ -90,20 +74,7 @@ shopTodo.editData({
     
 }) 
 // shopTodo.findData('5')
-shopTodo.sortData()
 
 shopTodo.getData()
 
 
-const animals = ['elephant', 'Dog', 'CAT', 'cow', 'horse', 'Bird'];
-const sorted = animals.sort((a, b) => {
-    if (a.toLowerCase() < b.toLowerCase()) {
-      return -1;
-    }
-    if (a.toLowerCase() > b.toLowerCase()) {
-      return 1;
-    }
-    return 0;
-  });
-  
-  console.log(sorted); // => ['Bird', 'CAT', 'cow', 'Dog', 'elephant', 'horse']
