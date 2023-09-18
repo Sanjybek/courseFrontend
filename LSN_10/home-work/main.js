@@ -33,31 +33,15 @@ profile.appendChild(stats)
 const ul = document.createElement('ul')
 stats.appendChild(ul)
 
-function createLi(innerText,span) {
-    const li = document.createElement('li')
+function createLi(innerText, tag) {
+    const li = document.createElement(tag)
     li.innerText = innerText
     ul.appendChild(li)
-   
 }
+createLi('1 posts', 'li')
+createLi('12 followers', 'li')
+createLi('14 following', 'li')
 
-createLi('posts')
-createLi('followers')
-createLi('following')
-
-// const span = document.createElement('span')
-// span.innerText = '164'
-// span.setAttribute('class', 'profile-stat-count')
-// createLi('sdfg').appendChild(span)
-
-// const span1 = document.createElement('span')
-// span1.innerText = '188'
-// span1.setAttribute('class', 'profile-stat-count')
-// createLi('sdfg').appendChild(span1)
-
-// const span2 = document.createElement('span')
-// span2.innerText = '206'
-// span2.setAttribute('class', 'profile-stat-count')
-// createLi('sdfg').appendChild(span2)
 
 
 
