@@ -1,12 +1,9 @@
-const header = document.getElementById('header')
 
 const container = document.getElementById('cont')
-header.appendChild(container)
 
 console.log(container);
 
 const profile = document.getElementById('profile')
-container.appendChild(profile)
 const profileImg = document.createElement('div')
 profileImg.setAttribute('class', 'profile-image')
 profile.appendChild(profileImg)
@@ -36,35 +33,34 @@ profile.appendChild(stats)
 const ul = document.createElement('ul')
 stats.appendChild(ul)
 
+function createLi(innerText,span) {
+    const li = document.createElement('li')
+    li.innerText = innerText
+    ul.appendChild(li)
+   
+}
+
+createLi('posts')
+createLi('followers')
+createLi('following')
+
+// const span = document.createElement('span')
+// span.innerText = '164'
+// span.setAttribute('class', 'profile-stat-count')
+// createLi('sdfg').appendChild(span)
+
+// const span1 = document.createElement('span')
+// span1.innerText = '188'
+// span1.setAttribute('class', 'profile-stat-count')
+// createLi('sdfg').appendChild(span1)
+
+// const span2 = document.createElement('span')
+// span2.innerText = '206'
+// span2.setAttribute('class', 'profile-stat-count')
+// createLi('sdfg').appendChild(span2)
 
 
-const li = document.createElement('li')
-ul.appendChild(li)
-li.innerText = 'posts'
 
-const li1 = document.createElement('li')
-ul.appendChild(li1)
-li1.innerText = 'followers'
-
-const li2 = document.createElement('li')
-ul.appendChild(li2)
-li2.innerText = 'following'
-
-
-const span = document.createElement('span')
-span.innerText = '164'
-span.setAttribute('class', 'profile-stat-count')
-li.appendChild(span)
-
-const span1 = document.createElement('span')
-span1.innerText = '188'
-span1.setAttribute('class', 'profile-stat-count')
-li1.appendChild(span1)
-
-const span2 = document.createElement('span')
-span2.innerText = '206'
-span2.setAttribute('class', 'profile-stat-count')
-li2.appendChild(span2)
 
 
 const bio = document.createElement('div')
@@ -120,36 +116,36 @@ li4.appendChild(i)
 
 
 
-let gal1 = document.getElementById('gallery')
+const gal1 = document.getElementById('gallery')
 console.log(gal1);
-let  gallereyItem1 = document.createElement('div')
+const  gallereyItem1 = document.createElement('div')
 gal1.appendChild(gallereyItem1)
 gallereyItem1.setAttribute('calass', 'gallery-item')
 gallereyItem1.setAttribute('tabindex', '0')
 
-let img3 = document.createElement('img')
+const img3 = document.createElement('img')
 img3.setAttribute('src', 'https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image')
 img3.setAttribute('class', 'gallery-image')
 gallereyItem1.appendChild(img3)
 
-let item1 = document.createElement('div')
+const item1 = document.createElement('div')
 item1.setAttribute('class', 'gallery-item-info')
 gallereyItem1.appendChild(item1)
 
-let ul3 = document.createElement('ul')
+const ul3 = document.createElement('ul')
 item.appendChild(ul3)
 
-let li5 = document.createElement('li')
+const li5 = document.createElement('li')
 li5.setAttribute('class', 'gallery-item-likes')
 li5.innerText = '54'
 ul3.appendChild(li5)
 
-let span6 = document.createElement('span')
+const span6 = document.createElement('span')
 span5.innerText = 'Likes:'
 span5.setAttribute('class','visually-hidden' )
 li5.appendChild(span6)
 
-let i1 = document.createElement('i')
+const i1 = document.createElement('i')
 i1.setAttribute('class','fas fa-heart')
 i1.setAttribute('aria-hidden','true')
 li5.appendChild(i1)
