@@ -1,7 +1,7 @@
 class Todo  {
     #dataArr = []
     getData() {
-        // console.log(this.#dataArr);
+        console.log(this.#dataArr);
     }
     setData(data) {
         this.#dataArr.push(data);
@@ -31,6 +31,25 @@ class Todo  {
             }
         }) 
         this.#dataArr = arr
+    }
+    sortData() {
+        const sortedData = this.#dataArr.map((el) => {
+            return el.name
+        }).sort()
+        this.#dataArr = sortedData
+    }
+    sortNumData() {
+        const sortData = this.#dataArr.map((el) => {
+           return el.price
+        }).sort()
+        
+        this.#dataArr = sortData
+    }
+    sortRatinData() {
+        const sortRatData = this.#dataArr.map((el) => {
+            return el.rating
+        }).sort()
+        this.#dataArr = sortRatData
     }
     
 }
@@ -75,6 +94,9 @@ shopTodo.editData({
 }) 
 // shopTodo.findData('5')
 
+// shopTodo.sortData()
+// shopTodo.sortNumData()
+shopTodo.sortRatinData()
 shopTodo.getData()
 
 
