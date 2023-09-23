@@ -13,6 +13,11 @@ const opValue = (operator) => {
         } else if (operator === '/' && firstValue.value && secondValue.value) {
             const res = firstValue.value / secondValue.value
             result.value = res
+            if(secondValue.value == 0) {
+                errorMessage.innerText = 'на ноль делить нельзя!'
+                ok_Btn.style.display = 'flex'
+                errorMessage.style.display = 'flex'
+            }
         } else if(operator === '*' && firstValue.value && secondValue.value) {
             const res = firstValue.value * secondValue.value
             result.value = res
