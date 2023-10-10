@@ -23,25 +23,26 @@ for (let i = 0; i < todoList.length; i++) {
     liTodo.innerText = todoList[i].title;
     ulList.appendChild(liTodo);
 }
-const todoInput = document.getElementById('inp')
-const todo = JSON.parse(localStorage.getItem('todos'))
 
-const inpValue = () => {
-    const text = todoInput.value
-    
-    // const newObj = {
+const todoInput = document.getElementById('inp');
+const saveBtn = document.getElementById('saveBtn');
+
+
+saveBtn.addEventListener('click', () => {
+    const text = todoInput.value;
+    if (text.trim() !== '') { 
+        const todos = JSON.parse(localStorage.getItem('todos')) ;
+        todos.push({
+            userId: 1,
+            id: todos.length + 1, 
+            title: text,
+            completed: false
+        });
+        
+        const liTodo = document.createElement('li');
+        liTodo.innerText = text;
+        ulList.appendChild(liTodo);
+        localStorage.setItem('todos', JSON.stringify(todos));
        
-    // }
-    todo.push({
-        userId: 1, 
-        id: 201, 
-        title: text,
-        completed: false
-    })
-    console.log(todo);
-    
-}
-
-
-// parse(todos);
-// localStorage.getItem('todos')
+    }
+});
