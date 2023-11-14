@@ -161,4 +161,5 @@ function countItemsByCategory(itemsArray) {
 }
 
 let result = countItemsByCategory(items);
+
 console.log(result);
