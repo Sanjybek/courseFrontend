@@ -164,3 +164,5 @@ let result = countItemsByCategory(items);
 
 console.log(result);
 
+
+
